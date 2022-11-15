@@ -1,0 +1,23 @@
+span {
+  color: red;
+}
+
+#xyz {
+  color: green;
+}
+
+.abc {
+  color: pink;
+}
+
+.abc.def {
+  text-transform: uppercase;
+}
+
+div > .second-p {
+  color: orange;
+}
+
+.jkl p {
+  color: blueviolet;
+}
