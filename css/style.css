@@ -74,6 +74,5 @@ html {
 }
 
 p {
-  text-align: center;
-  vertical-align: middle;
+  padding-top: 50px;
 }
