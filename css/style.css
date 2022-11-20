@@ -1,0 +1,18 @@
+* {
+  text-align: center;
+}
+
+caption {
+  text-transform: uppercase;
+}
+
+.main-table,
+.month {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.main-table {
+  margin: 0 auto;
+}
