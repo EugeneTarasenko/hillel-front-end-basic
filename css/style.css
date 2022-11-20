@@ -1,0 +1,13 @@
+* {
+  line-height: 2;
+}
+
+nav.list-nav > ul > li {
+  list-style-type: none;
+  display: inline;
+  padding: 0.5rem;
+}
+
+input {
+  line-height: 1;
+}

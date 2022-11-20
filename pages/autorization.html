@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Authorization </title>
+</head>
+
+<body>
+    <header>
+        <nav class="list-nav">
+            <ul>
+                <li>
+                    <a href="../index.html">Main</a>
+                </li>
+                <li>
+                    <a href="./registration.html">Registration</a>
+                </li>
+                <li>
+                    <a href="./search.html">Search</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Authorization</h1>
+    </header>
+    <main>
+        <div>
+            <form action="https://fom.in.ua/echo">
+                <fieldset>
+                    <legend>Your data for authorization</legend>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="mail@google.com" required><br><br>
+
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required><br><br>
+
+                    <label for="remember"><input type="checkbox" name="remember" id="remember"> Remember
+                        information</label>
+                    <br><br>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

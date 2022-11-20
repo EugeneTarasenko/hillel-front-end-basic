@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Search</title>
+</head>
+
+<body>
+    <header>
+        <nav class="list-nav">
+            <ul>
+                <li>
+                    <a href="../index.html">Main</a>
+                </li>
+                <li>
+                    <a href="./registration.html">Registration</a>
+                </li>
+                <li>
+                    <a href="./autorization.html">Autorization</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Search</h1>
+    </header>
+    <main>
+        <div>
+            <form action="https://fom.in.ua/echo">
+                <fieldset>
+
+                    <div>
+                        <label for="type">Choose type:</label>
+                        <select id="type" name="type">
+                            <option value="none" disabled selected>&nbsp;</option>
+                            <option value="hatchback">Hatchback</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">MUV/SUV</option>
+                            <option value="coupe">Coupe</option>
+                            <option value="convertible">Convertible</option>
+                            <option value="wagon">Wagon</option>
+                            <option value="van">Van</option>
+                            <option value="jeep">Jeep</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="brand">Choose brand:</label>
+                        <select id="brand" name="brand">
+                            <option value="none" disabled selected>&nbsp;</option>
+                            <option value="volkswagen">Volkswagen</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="chrysler">Chrysler</option>
+                            <option value="ford">Ford</option>
+                            <option value="gm">GM</option>
+                            <option value="bmw">BMW</option>
+                            <option value="honda">Honda</option>
+                            <option value="hyundai">Hyundai</option>
+                            <option value="nissan">Nissan</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="country">Choose a producing country:</label>
+                        <select id="country" name="country">
+                            <option value="none" disabled selected>&nbsp;</option>
+                            <option value="china">China</option>
+                            <option value="us">United States</option>
+                            <option value="japan">Japan</option>
+                            <option value="india">India</option>
+                            <option value="korea">South Korea</option>
+                            <option value="germany">Germany</option>
+                            <option value="mexico">Mexico</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="spain">Spain</option>
+                            <option value="thailand">Thailand</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="min-price"> Minimal price: </label>
+                        <input type="number" name="min-price" id="min-price" min="5000" max="100000" step="500"
+                            value="5000">
+                    </div>
+                    <div>
+                        <label for="max-price"> Maximum price: </label>
+                        <input type="number" name="max-price" id="max-price" min="5000" max="100000" step="500"
+                            value="100000">
+                    </div>
+
+                    <div>
+                        <label for="min-year"> Minimal year of production </label>
+                        <input type="number" name="min-year" id="min-year" min="1990" max="2022" step="1" value="1990">
+                    </div>
+                    <div>
+                        <label for="max-year"> Maximum year of production: </label>
+                        <input type="number" name="max-year" id="max-year" min="1990" max="2022" step="1" value="2022">
+                    </div>
+
+                    <div>
+                        <label for="condition">Choose condition:</label>
+                        <select id="condition" name="condition" multiple>
+                            <option value="new">New</option>
+                            <option value="used">Used</option>
+                            <option value="crash">After a crash</option>
+                            <option value="repaired">Repaired</option>
+                            <option value="leased">Leased</option>
+                            <option value="no-toll">Not tolled</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="fuel">Fuel type:</label>
+                        <select id="fuel" name="fuel">
+                            <option value="none" disabled selected>&nbsp;</option>
+                            <option value="petrol">Petrol</option>
+                            <option value="diesel">Diesel</option>
+                            <option value="hybrid">Hybrid</option>
+                            <option value="electro">Electro</option>
+                            <option value="gas">Gas</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="gear">Gearbox:</label>
+                        <select id="gear" name="gear">
+                            <option value="none" disabled selected>&nbsp;</option>
+                            <option value="automatic">Automatic</option>
+                            <option value="manual">Manual</option>
+                            <option value="cvt">CVT</option>
+
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="car-color">Choose a color:</label>
+                        <input type="color" list="color" id="car-color" name="color">
+                        <datalist id="color">
+                            <option value="#000000">Black</option>
+                            <option value="#cccccc">Grey</option>
+                            <option value="#ffffff">White</option>
+                            <option value="#6699cc">Blue</option>
+                            <option value="#ff0000">Red</option>
+                            <option value="#800000">Maroon</option>
+                        </datalist>
+                    </div>
+
+                    <div>
+                        <label for="comfort">Additional options:</label>
+                        <select id="comfort" name="comfort" multiple>
+                            <option value="none" disabled selected>&nbsp;</option>
+                            <option value="leather">Leather</option>
+                            <option value="sunroof">Sunroof</option>
+                            <option value="seat-adjustments">Seat adjustments</option>
+                            <option value="seat-heating">Seat heating</option>
+                            <option value="wheel-heating">Wheel heating</option>
+                        </select>
+                    </div>
+
+                    <div><input type="submit" value="submit"></div>
+
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
