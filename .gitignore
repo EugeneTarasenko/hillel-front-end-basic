@@ -1,5 +1,6 @@
+# Mac files
 .DS_Store
 Icon?
-homework_1/
-homework_2/
+
+# IDE files
 .vscode/
