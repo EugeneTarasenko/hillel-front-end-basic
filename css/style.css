@@ -1,11 +1,13 @@
 :root {
-  --light-orange: #FF9C7D;
-  --bright-orange: #FF6336;
-  --beige: #FFF8E4;
-  --light-blue: #C9E8F2;
-  --light-brown: #DABC98;
-  --light-grey-primary: #EEEEEE;
-  --light-grey-secondary: #CCCCCC;
+  --color-primary-bright: #FF6336;
+  --color-primary-light: #FF9C7D;
+  --color-secondary-dark: #DABC98;
+  --color-seconday-light: #FFF8E4;
+  --color-for-revolut-section: #C9E8F2;
+  --color-for-integrations-section: #EEEEEE;
+  --color-for-footer: #CCCCCC;
+  --color-white: #FFF;
+  --color-black: #000;
 }
 
 * {
@@ -27,6 +29,34 @@ li {
   list-style: none;
 }
 
+html {
+  /* 62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Graphik', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 6.5rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {}
+
 .wrapper {
   max-width: 1330;
   margin: 0 auto;
@@ -34,6 +64,4 @@ li {
   padding-right: 20px;
 }
 
-.header {
-  max-width: 1330px;
-}
+.header {}
