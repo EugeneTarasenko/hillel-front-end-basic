@@ -82,6 +82,9 @@ ul {
   padding: 0;
 }
 
+
+
+
 /*------ Common classes' styles ------*/
 
 
@@ -109,7 +112,7 @@ ul {
   color: #000;
 }
 
-.button-dark {
+.tag {
   background-color: rgba(29, 47, 56, 0.8);
   color: #fff;
   border-radius: .3rem;
@@ -147,26 +150,27 @@ ul {
   gap: 4rem;
 }
 
-.header>.wrapper>* {
-  align-self: center;
+.header__navigation {
+  display: flex;
+  gap: 4rem;
 }
 
 .header>.wrapper>* {
-  display: flex;
+  align-self: center;
 }
 
 .header>.wrapper> :nth-last-child(2) {
   flex: 1;
 }
 
-.header_link {
+.header__link {
   display: flex;
   gap: 0.5rem;
   font-size: 1.4rem;
   line-height: 2rem;
 }
 
-.header_link>* {
+.header__link>* {
   align-self: center;
 }
 
@@ -307,8 +311,7 @@ ul {
   margin-bottom: 4rem;
 }
 
-.section4__item>a {
-  display: inline-block;
+.section4__tag {
   position: absolute;
   left: 1.5rem;
   top: 1.5rem;
