@@ -20,6 +20,9 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-size: 62.5%;
   color: var(--color-text);
+}
+
+body {
   padding: 0;
   margin: 0;
 }
@@ -29,6 +32,11 @@ a {
   color: inherit;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
 
 /*––– Class styles –––*/
 
@@ -36,14 +44,19 @@ a {
   max-width: 192rem;
   padding-left: 16rem;
   padding-right: 16rem;
-  border: 1px red solid;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header>.wrapper {
   padding-top: 5rem;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 6rem;
+}
+
+.header__main-logo {
+  align-self: flex-end;
 }
 
 .header__content {
@@ -53,10 +66,8 @@ a {
 
 .header__content-upper-row {
   display: flex;
-  border: 1px green solid;
   gap: 0.6rem;
   align-items: center;
-  margin-bottom: 1.6rem;
 }
 
 .language__buttons {
@@ -99,9 +110,17 @@ a {
   font-weight: 700;
 }
 
+.header__navigation-link:hover {
+  color: var(--color-active-hover);
+}
+
 .header__navigation-link--active {
   color: var(--color-accent);
   border-bottom: 2px var(--color-accent) solid;
+}
+
+.header__navigation-link--active:hover {
+  color: var(--color-accent);
 }
 
 .circle-separator {
@@ -112,13 +131,144 @@ a {
 
 }
 
+.header__facebook-logo>path:hover {
+  fill: var(--color-active-hover);
+}
+
+/*––––––––––––––– Main –––––––––––––––*/
 
 
+.main-section>.wrapper {
+  margin-bottom: 6rem;
+}
+
+
+.main__heading {
+  font-size: 3.8rem;
+  line-height: 4.6rem;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 auto;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-bottom: 6rem;
+
+}
+
+.main__member-card {}
+
+.main__card-more>svg>path:hover {
+  stroke: var(--color-accent);
+}
+
+.main__card-more>svg>circle:hover {
+  fill: var(--color-bg-alt);
+}
+
+.member-photo {
+  border-radius: 1.2rem;
+  width: 100%;
+}
+
+.main__card-heading {
+  color: var(--color-main);
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.main__card-text {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  vertical-align: middle;
+}
+
+.main__card-heading:hover {
+  color: var(--color-accent);
+}
+
+.main__card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__member-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/**––– Footer –––**/
+
+.footer {
+  background-color: var(--color-bg);
+}
+
+.footer>.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer__contacts-upper-part,
+.footer__contacts-bottom-part {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__contacts-upper-part {
+  margin-bottom: 2rem;
+}
+
+.footer__copyright-info,
+.footer__real-adress,
+.footer__phone-number,
+.footer__email {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.footer__real-adress {
+  margin: 0;
+  color: var(--color-main);
+}
+
+.footer__address-link,
+.footer__phone-number,
+.footer__email {
+  font-weight: 700;
+}
+
+.footer__address-link {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--color-active-regular);
+  text-transform: uppercase;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__phone-number {
+  color: var(--color-main-alt);
+}
+
+.footer__email {
+  color: var(--color-active-regular);
+}
 
 
 /***----- Things to fix::after
 
-language buttons
-
-
+fix hover stroke card more svg image
+fix facebook logo link when hovering empty area
+fix on map upper and bottom paddings
 ***/
