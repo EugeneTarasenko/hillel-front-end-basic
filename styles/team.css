@@ -1,0 +1,76 @@
+@import './main.css';
+
+/**** Team page styles ***/
+
+
+.heading {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    margin-bottom: 60px;
+  }
+}
+
+/*** Card design***/
+
+.team-members-section {}
+
+.card__title {
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__subtitle {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-text);
+}
+
+.card__image img {
+  border-radius: 12px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.card__link path,
+.card__link circle {
+  transition: all .2s;
+}
+
+.card__link:hover path {
+  stroke: var(--color-accent);
+}
+
+.card__link:hover circle {
+  stroke: var(--color-background-alt);
+}
+
+.card__more-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card-text {
+  position: relative;
+}
+
+.team-members-section .grid {
+  gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-members-section .grid {
+    gap: 60px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .team-members-section .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

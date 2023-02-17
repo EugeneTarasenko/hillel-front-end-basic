@@ -1,0 +1,117 @@
+.contact-section {
+  display: grid;
+  gap: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-section {
+    padding-inline: 180px;
+  }
+}
+
+.contact-data>.line-separator {
+  margin-block: 30px;
+}
+
+.contact-data>* {
+  color: var(--color-main);
+}
+
+.contact-data>*,
+.contact-data>.mail-link {
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.contact-section .facebook-link {
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+
+.link-text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.form {
+  background-color: var(--color-background);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.form__title {
+  margin-bottom: 30px;
+}
+
+.form__subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+input,
+.message-input {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  transition: outline .2s;
+}
+
+.message-input {
+  min-height: 130px;
+  resize: none;
+}
+
+input::placeholder,
+.message-input::placeholder {
+  color: var(--color-text);
+}
+
+input:focus,
+textarea:focus {
+  outline-color: var(--color-primary-active);
+}
+
+input:invalid::placeholder {}
+
+input:focus:invalid {
+  outline-color: #f00;
+  color: #f00;
+}
+
+input:disabled {
+  background-color: var(--color-background-alt);
+}
+
+input+input,
+.message-input {
+  margin-top: 15px;
+}
+
+input#message {
+  min-height: 130px;
+}
+
+.btn-submit {
+  width: 100%;
+  margin-top: 30px;
+}

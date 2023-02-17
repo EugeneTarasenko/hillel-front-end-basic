@@ -1,0 +1,46 @@
+main {
+  padding: 0;
+}
+
+.header {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    margin-bottom: 30px;
+  }
+}
+
+.publications .cards {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .publications .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .publications .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/***** buttons ***/
+
+.switch-buttons {
+  display: inline-flex;
+  gap: 2px;
+  padding: 2px;
+  background-color: var(--color-separator);
+  border-radius: 12px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 30px;
+}
