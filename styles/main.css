@@ -161,11 +161,11 @@ a.link {
   color: var(--color-accent);
 }
 
-.facebook-link:hover path {
+.social-link:hover path {
   fill: var(--color-accent);
 }
 
-.facebook-link path {
+.social-link path {
   transition: fill .2s;
 }
 
@@ -188,7 +188,7 @@ a.link {
 }
 
 .wrapper {
-  max-width: 1620px;
+  max-width: 1600px;
   width: 100%;
   padding: 0 30px;
   margin: 0 auto;
@@ -355,7 +355,7 @@ li.gradient-text {
   color: var(--color-text);
 }
 
-.header .facebook-link,
+.header .social-link,
 .header .separator {
   display: none;
 }
@@ -380,7 +380,7 @@ li.gradient-text {
     margin-left: inherit;
   }
 
-  .header .facebook-link,
+  .header .social-link,
   .header__address {
     display: inherit;
     font-style: normal;
@@ -394,11 +394,11 @@ li.gradient-text {
     background-color: transparent;
   }
 
-  .dark-section .header .facebook-link path {
+  .dark-section .header .social-link path {
     fill: #fff;
   }
 
-  .dark-section .header .facebook-link:hover path {
+  .dark-section .header .social-link:hover path {
     fill: var(--color-accent);
   }
 }
@@ -992,6 +992,19 @@ h3.services__card-title {
 }
 
 
+
+
+/*** Swiper ***/
+
+.swiper .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-primary);
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-color: var(--color-primary-active);
+}
 
 
 

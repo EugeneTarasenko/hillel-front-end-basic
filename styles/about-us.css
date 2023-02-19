@@ -1,0 +1,187 @@
+main {
+  padding: 0;
+}
+
+.section-1.wrapper,
+.section-3.wrapper {
+  max-width: 1360px;
+}
+
+.section-1 {
+  display: grid;
+  gap: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .section-1 {
+    grid-template-columns: 1fr 354px;
+  }
+}
+
+p {
+  margin-top: 10px;
+}
+
+.section-1 .list {
+  padding-left: 30px;
+  border-left: 4px solid var(--color-separator);
+}
+
+.section-1 .list-item__heading {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 700;
+}
+
+.section-1 .list-item+.list-item {
+  margin-top: 40px;
+}
+
+
+.section-1 .list-item:nth-child(1)>.list-item__heading:before {
+  content: url("../images/about-us/Vector.svg");
+  margin-right: 10px;
+}
+
+.section-1 .list-item:nth-child(2)>.list-item__heading:before {
+  content: url("../images/about-us/Clients.svg");
+  margin-right: 10px;
+}
+
+.section-1 .list-item:nth-child(3)>.list-item__heading:before {
+  content: url("../images/about-us/Probono.svg");
+  margin-right: 10px;
+}
+
+.list-item__text {
+  display: block;
+  color: var(--color-main);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+
+/*** main Photo ***/
+
+.section-2 {
+  position: relative;
+}
+
+.team-photo {
+  width: 100%;
+}
+
+.team-photo-title {
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 13px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  opacity: 0.8;
+  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+@media screen and (min-width: 768px) {
+  .team-photo-title {
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: 63px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .team-photo-title {
+    font-size: 86px;
+    line-height: 105px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .team-photo-title {
+    font-size: 96px;
+    line-height: 117px;
+  }
+}
+
+
+/**** Section-3 *****/
+
+
+.section-3 {
+  display: grid;
+  gap: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .section-3 {
+    grid-template-columns: 1fr 370px;
+    gap: 60px;
+  }
+}
+
+/**** Section 4 ******/
+
+.section-4 {
+  padding-top: 30px;
+  background-color: var(--color-background);
+}
+
+.section-4 .title {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-main);
+  margin-bottom: 30px;
+}
+
+.section-4 .card {
+  min-height: 110px;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-4 .card>img {
+  max-width: 100%;
+}
+
+.swiper-wrapper {
+  padding-bottom: 60px;
+}
+
+.line-separator {
+  height: 2px;
+  margin-top: 20px;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4 {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .section-1,
+  .section-2,
+  .section-3,
+  .section-4 {
+    margin-top: 60px;
+  }
+}
