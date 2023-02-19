@@ -348,12 +348,14 @@ li.gradient-text {
   color: #fff;
 }
 
+
+
 .header__language-switcher>.radio-label:hover {
   background-color: var(--color-background);
 }
 
 .dark-section .header .radio-label:hover {
-  background-color: rbga(255 255 255 / 0.7);
+  background-color: rgb(83, 83, 164);
 }
 
 .header__language-switcher>.radio-input:checked+.radio-label {
