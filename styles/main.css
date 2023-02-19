@@ -43,8 +43,8 @@ main {
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   color: #000000;
 }
 
@@ -67,43 +67,42 @@ h3 {
   color: #fff;
 }
 
-
 h1 {
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 38px;
-    line-height: 46px;
+    font-size: 2.375rem;
+    line-height: 2.875rem;
   }
 }
 
 h2 {
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 h3 {
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 1.375rem;
+  line-height: 1.625rem;
 }
 
 h4 {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 
 p {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: .875rem;
+  line-height: 1.375rem;
 }
 
 ol,
 ul {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
   padding: 0;
   margin: 0;
 }
@@ -155,12 +154,11 @@ button {
 
 
 a.link {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: var(--color-primary);
   transition: color .2s;
   cursor: pointer;
-  /* TODO: check link text size and line height*/
 }
 
 .link:hover {
@@ -247,8 +245,6 @@ li.gradient-text {
   display: none;
 }
 
-/* .dark-section .header {} */
-
 .header .separator {
   background-color: var(--color-separator);
 }
@@ -292,8 +288,8 @@ li.gradient-text {
 }
 
 .header__page-name {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 
 .dark-section .header .header__page-name {
@@ -313,8 +309,8 @@ li.gradient-text {
   }
 
   .header__page-name {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
   }
 }
 
@@ -337,8 +333,8 @@ li.gradient-text {
 }
 
 .header__language-switcher>.radio-label {
-  font-size: 12px;
-  line-height: 14px;
+  font-size: .75rem;
+  line-height: .875rem;
   font-weight: 700;
   color: var(--color-text);
   padding: 5px 7px;
@@ -388,7 +384,6 @@ li.gradient-text {
   .header__language-and-contacts-container {
     background-color: inherit;
     padding: 0;
-    /* TODO: fix paddings */
   }
 
   .header .phone-link {
@@ -469,7 +464,6 @@ li.gradient-text {
   margin-right: 8px;
 }
 
-/* TODO: change width: from 100% to width: auto */
 
 .nav__list {
   display: flex;
@@ -487,8 +481,8 @@ li.gradient-text {
   width: 100%;
   text-align: center;
   display: inline-block;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
   font-weight: 700;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -543,8 +537,8 @@ li.gradient-text {
 
   .header .nav__link {
     color: var(--color-primary);
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     padding: 0;
     border-radius: unset;
     background-color: inherit;
@@ -704,11 +698,6 @@ li.gradient-text {
   }
 }
 
-/* TODO: check images DPR in Firefox */
-/* TODO: Check svg images (logos, buttons, etc ) to scale 1x 2x*/
-
-
-
 /*** Footer ***/
 
 .footer {
@@ -779,7 +768,7 @@ li.gradient-text {
   }
 
   .footer .contacts-container {
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -799,6 +788,10 @@ li.gradient-text {
     grid-column: 2 / 3;
     justify-self: end;
     align-self: start;
+  }
+
+  .footer .contacts-container {
+    margin-bottom: 0;
   }
 
 }
@@ -847,8 +840,8 @@ li.gradient-text {
 .link--services {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: .875rem;
+  line-height: 1.0625rem;
   margin-bottom: 100px;
 }
 
@@ -900,8 +893,8 @@ h3.services__card-title {
 }
 
 .services__card-content {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
 }
 
 
@@ -968,8 +961,8 @@ h3.services__card-title {
 .btn {
   cursor: pointer;
   transition: background .3s;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   font-weight: 700;
   padding: 10px 30px;
   background-color: transparent;
@@ -1068,8 +1061,8 @@ h3.services__card-title {
 
 .form__subtitle {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: .875rem;
+  line-height: 1.0625rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--color-text);
@@ -1079,8 +1072,8 @@ h3.services__card-title {
 
 input,
 .message-input {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   padding: 15px;
   width: 100%;
   border: none;
@@ -1102,8 +1095,6 @@ input:focus,
 textarea:focus {
   outline-color: var(--color-primary-active);
 }
-
-input:invalid::placeholder {}
 
 input:focus:invalid {
   outline-color: #f00;
@@ -1127,16 +1118,3 @@ input#message {
   width: 100%;
   margin-top: 30px;
 }
-
-
-
-
-
-
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 1024px) {}
-
-@media screen and (min-width: 1440px) {}
-
-@media screen and (min-width: 1920px) {}

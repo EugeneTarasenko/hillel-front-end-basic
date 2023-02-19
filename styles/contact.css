@@ -26,8 +26,8 @@
 
 .contact-data>*,
 .contact-data>.mail-link {
-  font-size: 21px;
-  line-height: 30px;
+  font-size: 1.3125rem;
+  line-height: 1.875rem;
 }
 
 .contact-section .social-link {
@@ -37,8 +37,8 @@
 }
 
 .link-text {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: .75rem;
+  line-height: 1rem;
   font-weight: 700;
   text-transform: uppercase;
 }

@@ -65,8 +65,8 @@ html {}
 
 .tab {
   white-space: nowrap;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   font-weight: 700;
   color: var(--color-text);
   cursor: pointer;
@@ -91,14 +91,14 @@ html {}
 
 
 .tab-content__heading {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   margin-bottom: 30px;
 }
 
 .tab-content__text {
-  font-size: 19px;
-  line-height: 30px;
+  font-size: 1.1875rem;
+  line-height: 1.875rem;
 }
 
 .tab {
@@ -244,8 +244,8 @@ section.tabs-section {
 }
 
 .clients-heading {
-  font-size: 14px;
-  line-height: 17px;
+  font-size: .875rem;
+  line-height: 1.0625rem;
   margin-bottom: 30px;
   text-align: center;
 }
