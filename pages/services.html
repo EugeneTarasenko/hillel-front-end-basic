@@ -11,14 +11,327 @@
     <title data-title-name="services">Services</title>
   </head>
   <body>
-    <main style="background-color: grey">
-      <svg class="icon" style="border: 2px solid red">
-        <use xlink:href="../images/services-sprite.svg#Support"></use>
-      </svg>
-      <svg class="icon">
-        <use xlink:href="../images/services-sprite.svg#tapgerine"></use>
-      </svg>
-    </main>
+    <div class="dark-section">
+      <div>
+        <header class="header wrapper grid grid--cols-2">
+          <div class="header__language-and-contacts-container">
+            <div class="radio header__language-switcher">
+              <input
+                class="radio-input"
+                type="radio"
+                value="uk"
+                name="language-switch"
+                id="uk-language-switch"
+              />
+              <label
+                class="radio-label language-switch"
+                for="uk-language-switch"
+                >УК</label
+              >
+              <input
+                class="radio-input language-switch"
+                type="radio"
+                value="ru"
+                name="language-switch"
+                id="ru-language-switch"
+              />
+              <label
+                class="radio-label language-switch"
+                for="ru-language-switch"
+                >РУ</label
+              >
+              <input
+                class="radio-input"
+                type="radio"
+                value="en"
+                name="language-switch"
+                id="en-language-switch"
+              />
+              <label
+                class="radio-label language-switch"
+                for="en-language-switch"
+                >EN</label
+              >
+            </div>
+            <div class="separator"></div>
+            <address class="header__address">
+              Kyiv, Mechnikova str., 14/1
+            </address>
+            <div class="separator"></div>
+            <a class="phone-link" href="tel:+0800211927">0800 211 927</a>
+            <div class="separator"></div>
+            <a class="link social-link" href="www.facebook.com" target="_blank"
+              ><svg
+                class="facebook-icon"
+                width="24"
+                height="24"
+                viewbox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_22721_6686)">
+                  <path
+                    d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z"
+                    fill="#B3B3BA"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_22721_6686">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <div class="header__logo-container">
+            <a class="header__logo" href="../index.html">
+              <div class="header__logo-image"></div>
+            </a>
+            <img class="header__slash" src="../images/slash.svg" />
+            <span class="header__page-name"></span>
+          </div>
+          <div class="header__nav-container">
+            <button class="nav-btn nav-button--hamburger"></button>
+            <nav class="nav header__nav popup-container">
+              <div class="nav__popup">
+                <button class="nav-btn nav-button--close">
+                  <img src="../images/close-button.svg" />
+                </button>
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a
+                      class="nav__link"
+                      data-page-name="about us"
+                      href="../pages/about-us.html"
+                      >about us</a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a
+                      class="nav__link"
+                      data-page-name="services"
+                      href="../pages/services.html"
+                      >services</a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a
+                      class="nav__link"
+                      href="../pages/team.html"
+                      data-page-name="team"
+                      >team</a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a
+                      class="nav__link"
+                      href="../pages/publications.html"
+                      data-page-name="publications"
+                      >publications</a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="../pages/contact.html"
+                      >contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </header>
+      </div>
+      <section class="small-wrapper">
+        <div class="hero">
+          <img
+            class="hero-icon"
+            src="../images/services/Ecommerce.svg"
+            alt=""
+          />
+          <h1 class="main-heading gradient-text">IT and e-commerce</h1>
+          <p class="main-text">
+            An endless stream of contracts, tax issues, labor relations,
+            corporate papers - legal work distracts you from doing business. But
+            there is not much work to do to hire an in-house lawyer.
+          </p>
+          <p class="main-text">
+            In addition, over time, the work will become the same type and
+            uninteresting for a full-time lawyer. And we know very well how
+            difficult it is to find a good candidate with experience in the
+            field of information technology in Ukraine.
+          </p>
+
+          <button class="main-btn btn btn--primary">Free consultation</button>
+          <div class="popup-container-2">
+            <div class="popup-window-2">
+              <form action="" class="form">
+                <div class="form__heading">
+                  <h2 class="form__title gradient-text">
+                    We would like to help you
+                  </h2>
+                  <button class="close-btn-2">
+                    <img src="../images/close-button.svg" />
+                  </button>
+                </div>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  pattern="[\w]{3,}"
+                  required
+                  oninvalid="this.setCustomValidity('Your name should have at least 3 letters.')"
+                  oninput="this.setCustomValidity('')"
+                />
+                <textarea
+                  class="message-input"
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <p class="form__subtitle">how to answer you?</p>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone number"
+                  pattern="[0-9]{10}|[[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}|[[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  required
+                  oninvalid="this.setCustomValidity('Enter correct phone number: 0XXXXXXXXX or 0XX-XXX-XX-XX or 0XX XXX XX XX')"
+                  oninput="this.setCustomValidity('')"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+                <button class="btn btn--primary btn-submit" type="submit">
+                  Send message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="main-separator separator separator--line-4px"></div>
+
+        <h3 class="secondary-heading">Services in this area:</h3>
+        <div class="services">
+          <ul class="services-list">
+            <li class="services-item">
+              support of investment projects for the development of port
+              infrastructure;
+            </li>
+            <li class="services-item">
+              certification of GTS, entering information about them in mandatory
+              databases and registers;
+            </li>
+            <li class="services-item">
+              registration of permits for the construction of port terminals;
+            </li>
+            <li class="services-item">
+              registration of permit and other mandatory documentation required
+              for carrying out activities in the port (emission permit,
+              conclusion on EIA, RTC, etc.);
+            </li>
+          </ul>
+
+          <ul class="services-list">
+            <li class="services-item">
+              support of procedures related to the lease of state property in
+              the port;
+            </li>
+            <li class="services-item">
+              support of procedures related to confirmation of the status of
+              port operator, maritime agent, foreign sailing line;
+            </li>
+            <li class="services-item">
+              support of procedures related to the inclusion of the company
+              within the port;
+            </li>
+            <li class="services-item">
+              appeals against actions related to the illegal imposition of
+              services in the port by monopoly companies.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="dark-section-bg-card bg-card-1"></div>
+    <div class="dark-section-bg-card bg-card-2"></div>
+
+    <section class="publications">
+      <div class="wrapper">
+        <a class="publications__link link" href="../pages/publications.html"
+          >publications &#10095;</a
+        >
+        <h2 class="publications__title gradient-text">
+          We have something to tell
+        </h2>
+        <div class="cards">
+          <div class="card card-1">
+            <img
+              class="card__image"
+              src="../images/publications/Publication-1.jpg"
+            />
+            <div class="card__text-content">
+              <a class="card__heading" href="#"><h4>Equity associate</h4></a>
+              <p class="card__date">April 22</p>
+              <div class="line-separator"></div>
+              <p class="card__text">
+                I'm a jun on projects. I am a co-owner of a law firm. How it
+                happened. Before entering my parents told me that if I…
+              </p>
+            </div>
+          </div>
+          <div class="card card-2">
+            <img
+              class="card__image"
+              src="../images/publications/Publication-2.jpg"
+            />
+            <div class="card__text-content">
+              <a class="card__heading" href="#"
+                ><h4>
+                  Penalty for the Good Corporation: what will happen to Google
+                  and others for violating the GDPR
+                </h4></a
+              >
+              <p class="card__date">September 29</p>
+              <div class="line-separator"></div>
+              <p class="card__text">
+                And why the recovery of 50 million euros could be a fateful
+                precedent According to Mind.ua January 21 National Commission
+                for Data Protection.
+              </p>
+            </div>
+          </div>
+          <div class="card card-3">
+            <img
+              class="card__image"
+              src="../images/publications/Publication-3.jpg"
+            />
+            <div class="card__text-content">
+              <a class="card__heading" href="#"
+                ><h4>Millennial Testament</h4></a
+              >
+              <p class="card__date">August 19</p>
+              <div
+                class="line-separator card-separator"
+                id="publications__separator"
+              ></div>
+              <p class="card__text">
+                What and how modern vloggers, opinion leaders and
+                crypto-millionaires will inherit A typical legacy of the
+                Ukrainian generation X looks like this: an apartment in…
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="separator separator--line-2px"></div>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="wrapper grid grid--cols-2">
@@ -63,5 +376,6 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/services.js"></script>
   </body>
 </html>
