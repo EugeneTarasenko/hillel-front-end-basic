@@ -8,8 +8,12 @@ main {
 
 @media screen and (min-width: 768px) {
   .header {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
+}
+
+.main {
+  background-color: var(--color-background);
 }
 
 .publications .cards {
@@ -33,12 +37,17 @@ main {
 
 /***** buttons ***/
 
+
 .switch-buttons {
   display: inline-flex;
   gap: 2px;
   padding: 2px;
   background-color: var(--color-separator);
   border-radius: 12px;
+}
+
+.main-btn,
+.switch-buttons {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
