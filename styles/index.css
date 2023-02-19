@@ -1,8 +1,5 @@
 @import './main.css';
 
-html {}
-
-
 .h-logo {
   background: url("../images/h-symbol.svg") no-repeat;
   background-size: auto 100%;
